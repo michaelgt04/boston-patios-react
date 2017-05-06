@@ -12,10 +12,10 @@ module.exports = function(config) {
     files: [
       'test/fixtures/**/*.json',
       // use Babel polyfill to emulate a full ES6 environment in PhantomJS
-      'node_modules/babel-polyfill/dist/polyfill.js',
+      './node_modules/babel-polyfill/dist/polyfill.js',
       // entry file for Webpack
       'test/testHelper.js',
-      'node_modules/whatwg-fetch/fetch.js'
+      './node_modules/whatwg-fetch/fetch.js'
     ],
 
     // before serving test/testHelper.js to the browser
@@ -58,10 +58,6 @@ module.exports = function(config) {
           },
           {
             test: /\.json$/,
-            include: [
-              /node_modules/,
-              path.resolve(__dirname, '..')
-            ],
             loader: 'json-loader'
           }
         ]

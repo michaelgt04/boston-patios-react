@@ -2,13 +2,15 @@ import { shallow, mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
 import React from 'react';
 import createResponseFromFixture from './support/createResponseFromFixture';
+let wrapper;
 
 Object.assign(global, {
   jasmineEnzyme,
   mount,
   React,
   shallow,
-  createResponseFromFixture
+  createResponseFromFixture,
+  wrapper
 });
 
 beforeEach(() => {
