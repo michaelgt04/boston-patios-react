@@ -1,22 +1,24 @@
-import App from '../../src/containers/App';
 import PatiosIndex from '../../src/containers/PatiosIndex';
+import PatioTile from '../../src/components/PatioTile';
 
-describe('src/containers/App', () => {
+describe('src/containers/PatiosIndex', () => {
   beforeEach(() => {
     spyOn(global, 'fetch').and.callFake(url => {
       if (url.endsWith('/api/v1/patios')) {
         return(createResponseFromFixture('patios/index'))
       }
-
     })
+
     wrapper = mount(
-      <App />
+      <PatiosIndex />
     );
   })
 
-  it('should render an PatiosIndex component', done => {
+
+  it('should render a fragment of PatioTile components', done => {
     setTimeout(() => {
-      expect(wrapper.find(PatiosIndex)).toBePresent()
+      expect(wrapper.find(PatioTile)).toBePresent()
+      expect(wrapper.find(PatioTile).length).toEqual(2)
       done();
     }, 0)
   });

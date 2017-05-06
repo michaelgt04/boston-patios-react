@@ -1,3 +1,24 @@
-{
-  "patio": "hello"
-}
+[
+  {
+    "patio": {
+      "id": 1,
+      "name": "American Fresh Beer Garden Assembly Row",
+      "description": "Slumbrew outdoor patio with trivia, food and a neighboring brewpub.",
+      "neighborhood": "Assembly Row",
+      "seats": null,
+      "created_at": "2017-05-05T21:14:55.106Z",
+      "updated_at": "2017-05-05T21:14:55.106Z"
+    }
+  },
+  {
+    "patio": {
+      "id": 2,
+      "name": "Ashmont Grill",
+      "description": "Modern comfort food right off the Ashmont T stop",
+      "neighborhood": "Dorchester",
+      "seats": null,
+      "created_at": "2017-05-05T21:14:55.113Z",
+      "updated_at": "2017-05-05T21:14:55.113Z"
+    }
+  }
+]
