@@ -4,7 +4,7 @@ This app creates a dynamic React front-end for users to most thoroughly enjoy th
 patios of Boston. Time to enjoy this glorious, well earned summer and spend as much time
 outside as possible!
 
-# Technologies
+### Technologies
 
 This application consumes the boston-patios-api application (elsewhere on my Github)
 that serves up a JSON representation of the patios of Boston. This application is meant
